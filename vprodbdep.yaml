@@ -31,11 +31,11 @@ spec:
                   key: db-pass
       nodeSelector:
         zone: us-east-2a
-      volumes:K
+      volumes:
       - name: vpro-db-data
         awsElasticBlockStore:
-            volumeID: vol-088dad90fbe8309f7
-            fsType: ext4
+          volumeID: vol-088dad90fbe8309f7
+          fsType: ext4
       initContainers:
       - name: busybox
         image: busybox:latest
